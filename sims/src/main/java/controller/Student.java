@@ -11,12 +11,7 @@ public class Student {
 	private String email_id;
 	private String dob;
 	
-	public int[] getAttendance() {
-		return attendance;
-	}
-	public void setAttendance(int[] attendance) {
-		this.attendance = attendance;
-	}
+	
 	private String pincode;
 	private String branch;
 	private String year_sem;
@@ -25,6 +20,13 @@ public class Student {
 	private String city;
 	
 	private int attendance[];
+	
+	public int[] getAttendance() {
+		return attendance;
+	}
+	public void setAttendance(int[] attendance) {
+		this.attendance = attendance;
+	}
 	
 	public String getRoll_no() {
 		return roll_no;

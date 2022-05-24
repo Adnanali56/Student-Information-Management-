@@ -43,7 +43,7 @@
                 </div>
             </div>
         </nav>
-        <form action="spudate">
+        <form action="supdate">
         <div class="jumbotron" style="background: url('images/dba.jpg') no-repeat;background-size: cover;height: 300px;"></div>
             <section class="h-200 ">
                 <div class="container py-5 h-100">
@@ -57,6 +57,7 @@
                                         <div class="col-xl-6">
                                             <div class="row">
                                                 <div class="form-outline">
+                                                    <input type="hidden" class="form-control form-control-lg" name="prev_roll_no" value="${stud.getRoll_no()}">
                                                     <input type="text" class="form-control form-control-lg" name="roll_no" value="${stud.getRoll_no()}">
                                                     <label class="form-label" for="form3Example1n">Roll NO</label>
                                                 </div>
@@ -128,6 +129,7 @@
                                             </div>
                 
                                             <div class="form-outline mb-4">
+                                                <input type="hidden" id="form3Example90" class="form-control form-control-lg" name="prev_pincode" value="${stud.getPincode()}">
                                                 <input type="text" id="form3Example90" class="form-control form-control-lg" name="pincode" value="${stud.getPincode()}">
                                                 <label class="form-label" for="form3Example90">Pincode</label>
                                             </div>
@@ -172,7 +174,7 @@
                                 <tr> 
                                     <td> ${i+1}</td> 
                                     <td>subject-${i+1} </td> 
-                                    <td><input type="number" name="sub${i}" value="${marksList[i]}" ></td> 
+                                    <td><input type="number" name="sub${i+1}" value="${marksList[i]}" ></td> 
                                     <td>${gradeList[i]}</td> 
                                 </tr>   
                             </c:forEach>
